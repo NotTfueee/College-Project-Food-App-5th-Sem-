@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,9 @@
 		23939B112957685000F5A8B5 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23939B082957685000F5A8B5 /* ProductCard.swift */; };
 		23939B132957685000F5A8B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23939B0A2957685000F5A8B5 /* ContentView.swift */; };
 		23939B142957685000F5A8B5 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23939B0B2957685000F5A8B5 /* CartManager.swift */; };
+		23939B182957740000F5A8B5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23939B172957740000F5A8B5 /* GoogleService-Info.plist */; };
+		23939B1B295774A800F5A8B5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 23939B1A295774A800F5A8B5 /* FirebaseAuth */; };
+		23939B1D295774A800F5A8B5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 23939B1C295774A800F5A8B5 /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,7 @@
 		23939B082957685000F5A8B5 /* ProductCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
 		23939B0A2957685000F5A8B5 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		23939B0B2957685000F5A8B5 /* CartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		23939B172957740000F5A8B5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23939B1B295774A800F5A8B5 /* FirebaseAuth in Frameworks */,
+				23939B1D295774A800F5A8B5 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +102,7 @@
 				23939B032957685000F5A8B5 /* ProductRow.swift */,
 				0B62817F235DEE8400E35CAF /* Assets.xcassets */,
 				0B628181235DEE8400E35CAF /* LaunchScreen.storyboard */,
+				23939B172957740000F5A8B5 /* GoogleService-Info.plist */,
 				0B628184235DEE8400E35CAF /* Info.plist */,
 			);
 			path = "Gehu Cafe";
@@ -143,6 +150,10 @@
 			dependencies = (
 			);
 			name = "Gehu Cafe";
+			packageProductDependencies = (
+				23939B1A295774A800F5A8B5 /* FirebaseAuth */,
+				23939B1C295774A800F5A8B5 /* FirebaseFirestore */,
+			);
 			productName = "Flash Chat iOS13";
 			productReference = 0B628173235DEE8100E35CAF /* Gehu Cafe.app */;
 			productType = "com.apple.product-type.application";
@@ -171,6 +182,9 @@
 				Base,
 			);
 			mainGroup = 0B62816A235DEE8100E35CAF;
+			packageReferences = (
+				23939B19295774A800F5A8B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 0B628174235DEE8100E35CAF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -187,6 +201,7 @@
 			files = (
 				0B628183235DEE8400E35CAF /* LaunchScreen.storyboard in Resources */,
 				0B628180235DEE8400E35CAF /* Assets.xcassets in Resources */,
+				23939B182957740000F5A8B5 /* GoogleService-Info.plist in Resources */,
 				0B62819E235F0F4D00E35CAF /* README.md in Resources */,
 				0B62817E235DEE8100E35CAF /* Main.storyboard in Resources */,
 			);
@@ -410,6 +425,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		23939B19295774A800F5A8B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		23939B1A295774A800F5A8B5 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23939B19295774A800F5A8B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		23939B1C295774A800F5A8B5 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23939B19295774A800F5A8B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0B62816B235DEE8100E35CAF /* Project object */;
 }
