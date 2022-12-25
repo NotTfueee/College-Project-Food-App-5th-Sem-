@@ -17,13 +17,15 @@ class GetStartedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-         navigationItem.hidesBackButton = true
+        navigationItem.hidesBackButton = true
 
     }
     
    
     @IBSegueAction func getStartedButtonPressed(_ coder: NSCoder) -> UIViewController? {
+      
         return UIHostingController(coder: coder, rootView: ContentView())
+        
     }
     
 }
