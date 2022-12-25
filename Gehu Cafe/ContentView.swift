@@ -7,11 +7,13 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     @StateObject var cartManager = CartManager()
     var columns = [GridItem(.adaptive(minimum: 187))]
     
     var body: some View {
+        
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: columns, spacing: 15) {

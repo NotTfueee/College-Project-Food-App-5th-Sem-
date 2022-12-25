@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "indian-breakfast-dish-paneer-paratha-serve-curd-chutney-indian-breakfast-dish-paneer-paratha-207185120-transformed-removebg-preview.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

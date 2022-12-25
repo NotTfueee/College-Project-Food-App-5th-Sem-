@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "stock-photo-boiled-eggs-boiled-eggs-in-white-ceramic-plate-on-wooden-table-434798401-transformed-removebg-preview.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
