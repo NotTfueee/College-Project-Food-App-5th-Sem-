@@ -17,6 +17,7 @@ struct PaymentButton: View {
             .frame(minWidth: 100 , maxWidth: 400)
             .frame(height: 45)
             .frame(maxWidth: .infinity)
+        
     }
 }
 

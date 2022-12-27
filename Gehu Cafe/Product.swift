@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Product: Identifiable {
+struct Product: Identifiable ,Codable {
     var id = UUID()
     var name: String
     var image: String

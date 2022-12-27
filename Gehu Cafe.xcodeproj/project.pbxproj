@@ -17,6 +17,11 @@
 		0B62818F235DF01000E35CAF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B62818E235DF01000E35CAF /* LoginViewController.swift */; };
 		0B628191235DF01B00E35CAF /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B628190235DF01B00E35CAF /* GetStartedViewController.swift */; };
 		0B62819E235F0F4D00E35CAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0B62819D235F0F4D00E35CAF /* README.md */; };
+		23026053295A093100230CB5 /* Stripe in Frameworks */ = {isa = PBXBuildFile; productRef = 23026052295A093100230CB5 /* Stripe */; };
+		23026055295A0BA400230CB5 /* StripeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23026054295A0BA400230CB5 /* StripeButton.swift */; };
+		2302605C295A168800230CB5 /* CheckoutIntentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2302605B295A168800230CB5 /* CheckoutIntentResponse.swift */; };
+		2302605E295A177400230CB5 /* PaymentConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2302605D295A177400230CB5 /* PaymentConfig.swift */; };
+		23026060295A1D5800230CB5 /* PaymentGatewayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2302605F295A1D5800230CB5 /* PaymentGatewayController.swift */; };
 		23939B0C2957685000F5A8B5 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23939B032957685000F5A8B5 /* ProductRow.swift */; };
 		23939B0D2957685000F5A8B5 /* PaymentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23939B042957685000F5A8B5 /* PaymentButton.swift */; };
 		23939B0E2957685000F5A8B5 /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23939B052957685000F5A8B5 /* CartButton.swift */; };
@@ -43,6 +48,10 @@
 		0B62818E235DF01000E35CAF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0B628190235DF01B00E35CAF /* GetStartedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
 		0B62819D235F0F4D00E35CAF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		23026054295A0BA400230CB5 /* StripeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeButton.swift; sourceTree = "<group>"; };
+		2302605B295A168800230CB5 /* CheckoutIntentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutIntentResponse.swift; sourceTree = "<group>"; };
+		2302605D295A177400230CB5 /* PaymentConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentConfig.swift; sourceTree = "<group>"; };
+		2302605F295A1D5800230CB5 /* PaymentGatewayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentGatewayController.swift; sourceTree = "<group>"; };
 		23939B032957685000F5A8B5 /* ProductRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		23939B042957685000F5A8B5 /* PaymentButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentButton.swift; sourceTree = "<group>"; };
 		23939B052957685000F5A8B5 /* CartButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
@@ -61,6 +70,7 @@
 			files = (
 				23939B1B295774A800F5A8B5 /* FirebaseAuth in Frameworks */,
 				23939B1D295774A800F5A8B5 /* FirebaseFirestore in Frameworks */,
+				23026053295A093100230CB5 /* Stripe in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +107,10 @@
 				23939B062957685000F5A8B5 /* CartView.swift */,
 				23939B0A2957685000F5A8B5 /* ContentView.swift */,
 				23939B042957685000F5A8B5 /* PaymentButton.swift */,
+				23026054295A0BA400230CB5 /* StripeButton.swift */,
+				2302605F295A1D5800230CB5 /* PaymentGatewayController.swift */,
+				2302605D295A177400230CB5 /* PaymentConfig.swift */,
+				2302605B295A168800230CB5 /* CheckoutIntentResponse.swift */,
 				23939B072957685000F5A8B5 /* Product.swift */,
 				23939B082957685000F5A8B5 /* ProductCard.swift */,
 				23939B032957685000F5A8B5 /* ProductRow.swift */,
@@ -153,6 +167,7 @@
 			packageProductDependencies = (
 				23939B1A295774A800F5A8B5 /* FirebaseAuth */,
 				23939B1C295774A800F5A8B5 /* FirebaseFirestore */,
+				23026052295A093100230CB5 /* Stripe */,
 			);
 			productName = "Flash Chat iOS13";
 			productReference = 0B628173235DEE8100E35CAF /* Gehu Cafe.app */;
@@ -184,6 +199,7 @@
 			mainGroup = 0B62816A235DEE8100E35CAF;
 			packageReferences = (
 				23939B19295774A800F5A8B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				23026051295A093100230CB5 /* XCRemoteSwiftPackageReference "stripe-ios-spm" */,
 			);
 			productRefGroup = 0B628174235DEE8100E35CAF /* Products */;
 			projectDirPath = "";
@@ -218,15 +234,19 @@
 				23939B0D2957685000F5A8B5 /* PaymentButton.swift in Sources */,
 				23939B132957685000F5A8B5 /* ContentView.swift in Sources */,
 				0B62818B235DF00000E35CAF /* WelcomeViewController.swift in Sources */,
+				23026055295A0BA400230CB5 /* StripeButton.swift in Sources */,
 				0B628177235DEE8100E35CAF /* AppDelegate.swift in Sources */,
 				0B628179235DEE8100E35CAF /* SceneDelegate.swift in Sources */,
 				23939B102957685000F5A8B5 /* Product.swift in Sources */,
 				0B62818F235DF01000E35CAF /* LoginViewController.swift in Sources */,
+				23026060295A1D5800230CB5 /* PaymentGatewayController.swift in Sources */,
 				23939B0E2957685000F5A8B5 /* CartButton.swift in Sources */,
 				23939B142957685000F5A8B5 /* CartManager.swift in Sources */,
 				23939B0C2957685000F5A8B5 /* ProductRow.swift in Sources */,
+				2302605E295A177400230CB5 /* PaymentConfig.swift in Sources */,
 				0B628191235DF01B00E35CAF /* GetStartedViewController.swift in Sources */,
 				0B62818D235DF00B00E35CAF /* RegisterViewController.swift in Sources */,
+				2302605C295A168800230CB5 /* CheckoutIntentResponse.swift in Sources */,
 				23939B112957685000F5A8B5 /* ProductCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +447,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		23026051295A093100230CB5 /* XCRemoteSwiftPackageReference "stripe-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stripe/stripe-ios-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 23.0.0;
+			};
+		};
 		23939B19295774A800F5A8B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -438,6 +466,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		23026052295A093100230CB5 /* Stripe */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23026051295A093100230CB5 /* XCRemoteSwiftPackageReference "stripe-ios-spm" */;
+			productName = Stripe;
+		};
 		23939B1A295774A800F5A8B5 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 23939B19295774A800F5A8B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

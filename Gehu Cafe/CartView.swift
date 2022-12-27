@@ -6,10 +6,15 @@
 //
 
 import SwiftUI
+import Stripe
 
 struct CartView: View {
     @EnvironmentObject var cartManager: CartManager
+    @State private var paymentMethodParams : STPPaymentMethodParams?
     
+    
+    
+
     var body: some View {
         ScrollView {
             
@@ -26,9 +31,17 @@ struct CartView: View {
                     }
                     .padding()
                     
+                    StripeButton()
+                        .padding()
                     
                     PaymentButton(action: {})
                         .padding()
+                    
+                    Section{
+                        STPPaymentCardTextField.Representable.init(paymentMethodParams: $paymentMethodParams)
+                    } header: {
+                        Text("Payment Information")
+                    }
                     
                     
                 } else {
